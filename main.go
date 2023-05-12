@@ -9,5 +9,6 @@ func main() {
 	router.POST("/findNearby", rtr.FindNearby)
 	router.POST("/checkUsername", rtr.CheckUsername)
 	router.POST("/getPercentile", rtr.GetPercentile)
+	router.GET("/healthCheck", rtr.HealthCheck)
 	router.Run()
 }

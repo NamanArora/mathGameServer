@@ -10,6 +10,10 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+func HealthCheck(c *gin.Context) {
+	c.JSON(http.StatusOK, "We are alive!")
+}
+
 func SaveScore(c *gin.Context) {
 	var req models.SaveScoreRequest
 	if err := c.ShouldBindJSON(&req); err != nil {
