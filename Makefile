@@ -5,4 +5,4 @@ logs:
 	docker logs -f mathgame_server
 
 clean:
-	docker compose down
+	docker-compose down
