@@ -4,6 +4,8 @@ services:
   mathgame_server:
     build:
       context: .
+    environment:
+      GIN_MODE: ${GIN_MODE}
     container_name: mathgame_server
     depends_on:
       - mongodb_container
